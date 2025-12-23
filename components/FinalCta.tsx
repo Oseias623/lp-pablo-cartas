@@ -19,15 +19,20 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ checkoutUrl }) => {
                     <p className="text-slate-300 text-base md:text-lg mb-8">
                         Más de 2.300 cristianos ya tomaron esta decisión. Hoy estudian a Pablo con claridad y crecen espiritualmente como nunca antes. La pregunta es: ¿vas a seguir luchando solo o te vas a unir a ellos?
                     </p>
-                    <div className="inline-block">
-                        <a
-                            href={checkoutUrl}
-                            className="bg-amber-500 text-slate-900 font-bold py-3 px-4 sm:py-4 sm:px-8 rounded-lg shadow-lg text-sm sm:text-lg hover:bg-amber-400 transform hover:scale-105 transition-all duration-300 uppercase tracking-wider whitespace-nowrap relative overflow-hidden btn-shine z-10"
-                        >
-                            SÍ, QUIERO TRANSFORMAR MI FORMA DE ESTUDIAR LA BIBLIA
-                        </a>
-                        <div className="bg-red-500/20 border border-red-500 text-red-300 rounded-lg font-semibold mt-6 md:-mt-5 pt-6 md:pt-10 pb-5 px-5 relative z-0">
-                            <p>⚠️ <strong>RECUERDA:</strong> Este precio promocional de US$ 6.90 (con todos los bonos incluidos) no durará para siempre. Cuando regreses a esta página, el valor puede haber aumentado.</p>
+                    <div className="flex flex-col items-center w-full max-w-lg mx-auto">
+                        <div className="z-10 w-full">
+                            <a
+                                href={checkoutUrl}
+                                className="block w-full bg-amber-500 text-slate-900 font-bold py-4 px-4 rounded-xl shadow-xl text-lg hover:bg-amber-400 transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider relative overflow-hidden btn-shine"
+                            >
+                                SÍ, QUIERO TRANSFORMAR MI FORMA DE ESTUDIAR LA BIBLIA
+                            </a>
+                        </div>
+
+                        <div className="w-full bg-red-900/30 border border-red-500/50 text-red-200 rounded-xl font-medium p-6 pt-8 -mt-4 relative z-0">
+                            <p className="text-sm md:text-base leading-relaxed">
+                                ⚠️ <strong>RECUERDA:</strong> Este precio promocional de US$ 6.90 (con todos los bonos incluidos) no durará para siempre. Cuando regreses a esta página, el valor puede haber aumentado.
+                            </p>
                         </div>
                     </div>
                     <p className="text-sm text-slate-400 mt-6">
