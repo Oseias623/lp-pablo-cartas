@@ -40,7 +40,7 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                         <div className="my-6 text-center">
                             <p className="text-red-600 font-black leading-none">
                                 <span className="text-xl sm:text-2xl align-top">US$</span>
-                                <span className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">9.90</span>
+                                <span className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">6.90</span>
                             </p>
                             <p className="text-xs font-bold text-red-600 tracking-wider mt-1">PAGO ÚNICO</p>
                         </div>
@@ -90,7 +90,7 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                             QUIERO EL PAQUETE COMPLETO AHORA
                         </a>
                         <div className="bg-red-50 border border-red-200 text-red-700 text-center p-3 rounded-lg text-sm mt-6">
-                            ⏰ <strong>ATENCIÓN:</strong> Este precio especial de US$ 9.90 es válido solo durante esta promoción de lanzamiento.
+                            ⏰ <strong>ATENCIÓN:</strong> Este precio especial de US$ 6.90 es válido solo durante esta promoción de lanzamiento.
                         </div>
                         <p className="text-slate-400 text-xs font-semibold mt-3 text-center">
                             ✅ Acceso Inmediato • ✅ Garantía de 7 Días • ✅ Acceso de por Vida

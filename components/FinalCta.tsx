@@ -27,7 +27,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ checkoutUrl }) => {
                             SÍ, QUIERO TRANSFORMAR MI FORMA DE ESTUDIAR LA BIBLIA
                         </a>
                         <div className="bg-red-500/20 border border-red-500 text-red-300 rounded-lg font-semibold -mt-5 pt-10 pb-5 px-5 relative z-0">
-                            <p>⚠️ <strong>RECUERDA:</strong> Este precio promocional de US$ 9.90 (con todos los bonos incluidos) no durará para siempre. Cuando regreses a esta página, el valor puede haber aumentado.</p>
+                            <p>⚠️ <strong>RECUERDA:</strong> Este precio promocional de US$ 6.90 (con todos los bonos incluidos) no durará para siempre. Cuando regreses a esta página, el valor puede haber aumentado.</p>
                         </div>
                     </div>
                     <p className="text-sm text-slate-400 mt-6">
