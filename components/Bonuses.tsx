@@ -90,7 +90,7 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                     </p>
                 </div>
                 <div className="mt-8 text-center max-w-3xl mx-auto">
-                    <p className="bg-red-50 text-red-800 font-bold p-4 rounded-lg border border-red-100 shadow-sm">🔥 IMPORTANTE: Estos bonos son exclusivos de esta oferta y pueden ser eliminados en cualquier momento. Garantizamos la entrega solo para quien compre hoy.</p>
+                    <p className="bg-red-50 text-red-800 font-bold p-4 sm:p-6 rounded-lg border border-red-100 shadow-sm text-sm sm:text-base">🔥 IMPORTANTE: Estos bonos son exclusivos de esta oferta y pueden ser eliminados en cualquier momento. Garantizamos la entrega solo para quien compre hoy.</p>
                 </div>
             </div>
         </section>
