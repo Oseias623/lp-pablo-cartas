@@ -56,7 +56,11 @@ const BonusCard: React.FC<BonusCardProps> = ({ title, description, value, index 
 };
 
 
-export const Bonuses: React.FC = () => {
+interface BonusesProps {
+    checkoutUrl: string;
+}
+
+export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
 
     return (
         <section className="py-16 md:py-24 bg-white overflow-hidden">
@@ -76,7 +80,7 @@ export const Bonuses: React.FC = () => {
 
                 <div className="mt-12 text-center">
                     <a
-                        href="#pricing"
+                        href={checkoutUrl}
                         className="inline-block text-center bg-gradient-to-br from-amber-500 to-amber-400 text-slate-900 font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl hover:from-amber-400 hover:to-amber-500 transform hover:scale-105 transition-all duration-300 text-lg uppercase tracking-wider whitespace-nowrap relative overflow-hidden btn-shine"
                     >
                         QUIERO GARANTIZAR MIS BONOS AHORA

@@ -1,7 +1,11 @@
 
 import React from 'react';
 
-export const FinalCta: React.FC = () => {
+interface FinalCtaProps {
+    checkoutUrl: string;
+}
+
+export const FinalCta: React.FC<FinalCtaProps> = ({ checkoutUrl }) => {
     return (
         <section className="py-16 md:py-24 bg-slate-900 text-white">
             <div className="container mx-auto px-6 text-center">
@@ -17,7 +21,7 @@ export const FinalCta: React.FC = () => {
                     </p>
                     <div className="inline-block">
                         <a
-                            href="#pricing"
+                            href={checkoutUrl}
                             className="bg-amber-500 text-slate-900 font-bold py-3 px-4 sm:py-4 sm:px-8 rounded-lg shadow-lg text-sm sm:text-lg hover:bg-amber-400 transform hover:scale-105 transition-all duration-300 uppercase tracking-wider whitespace-nowrap relative overflow-hidden btn-shine z-10"
                         >
                             SÍ, QUIERO TRANSFORMAR MI FORMA DE ESTUDIAR LA BIBLIA

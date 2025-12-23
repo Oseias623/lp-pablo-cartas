@@ -1,7 +1,11 @@
 import React from 'react';
 import ebookMockup from '../assets/bundle-mockup.png';
 
-export const Hero: React.FC = () => {
+interface HeroProps {
+  checkoutUrl: string;
+}
+
+export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
   return (
     <section className="relative overflow-hidden bg-[#0c0a09]">
       {/* Background Ambience - Warm Glow spots */}
@@ -29,7 +33,7 @@ export const Hero: React.FC = () => {
 
           <div className="flex flex-col items-center lg:items-start gap-6 w-full">
             <a
-              href="#pricing"
+              href={checkoutUrl}
               className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-lg rounded-xl shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide btn-shine"
             >
               QUIERO EMPEZAR AHORA

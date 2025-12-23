@@ -18,14 +18,14 @@ const App: React.FC = () => {
   return (
     <div className="bg-slate-50 text-slate-800 min-h-screen">
       <main>
-        <Hero />
+        <Hero checkoutUrl={checkoutUrl} />
         <About />
         <SocialProof />
         <Author />
-        <Bonuses />
+        <Bonuses checkoutUrl={checkoutUrl} />
         <Pricing checkoutUrl={checkoutUrl} />
         <Faq />
-        <FinalCta />
+        <FinalCta checkoutUrl={checkoutUrl} />
       </main>
       <Footer />
     </div>
