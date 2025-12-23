@@ -81,7 +81,7 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                 <div className="mt-12 text-center">
                     <a
                         href={checkoutUrl}
-                        className="inline-block text-center bg-gradient-to-br from-amber-500 to-amber-400 text-slate-900 font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl hover:from-amber-400 hover:to-amber-500 transform hover:scale-105 transition-all duration-300 text-lg uppercase tracking-wider whitespace-nowrap relative overflow-hidden btn-shine"
+                        className="inline-block text-center bg-gradient-to-br from-amber-500 to-amber-400 text-slate-900 font-bold py-3 px-6 sm:py-4 sm:px-8 rounded-lg shadow-lg hover:shadow-xl hover:from-amber-400 hover:to-amber-500 transform hover:scale-105 transition-all duration-300 text-sm sm:text-lg uppercase tracking-wider whitespace-normal md:whitespace-nowrap relative overflow-hidden btn-shine"
                     >
                         QUIERO GARANTIZAR MIS BONOS AHORA
                     </a>
