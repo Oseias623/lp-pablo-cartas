@@ -32,7 +32,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ checkoutUrl }) => {
                         </div>
                     </div>
                     <p className="text-sm text-slate-400 mt-6 font-medium">
-                        🔒 Pago 100% seguro (Stripe) • ✅ Acceso inmediato por email • 🛡️ Garantía incondicional de 7 días
+                        🔒 Pago 100% seguro • ✅ Acceso inmediato por email • 🛡️ Garantía incondicional de 7 días
                     </p>
                 </div>
             </div>

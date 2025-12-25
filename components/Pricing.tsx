@@ -53,7 +53,7 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                             </li>
                             <li className="flex items-center">
                                 <CheckIcon className="text-emerald-500 mr-3 flex-shrink-0" />
-                                <span className="text-slate-700 font-medium">Pago 100% seguro (Stripe)</span>
+                                <span className="text-slate-700 font-medium">Pago 100% seguro</span>
                             </li>
                         </ul>
 
