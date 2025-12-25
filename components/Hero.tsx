@@ -24,27 +24,23 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-slate-50">
-            Estudia las <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">Cartas de Pablo</span> con Claridad Absoluta.
+            ¿Lees las Cartas de Pablo... <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">y terminas más confundido que antes?</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-stone-300 mb-8 max-w-2xl leading-relaxed">
-            Deja de sentirte perdido en la teología densa. Descubre guías visuales y prácticas que transforman textos complejos en sabiduría aplicable para tu vida hoy.
+            Entiende a Pablo sin teología académica, sin "achismos" y sin depender de terceros.<br /><br />
+            <span className="text-amber-400 font-semibold">En pocos días, vas a leer con claridad.</span>
           </p>
 
           <div className="flex flex-col items-center lg:items-start gap-6 w-full">
-            <a
-              href={checkoutUrl}
-              className="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-lg rounded-xl shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-[0_0_30px_rgba(245,158,11,0.5)] transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wide btn-shine"
-            >
-              QUIERO EMPEZAR AHORA
-            </a>
+
 
             <div className="flex flex-col items-center lg:items-start gap-3">
-              <p className="text-stone-400 text-sm font-medium flex items-center gap-2">
-                <span>🔒</span> Acceso Inmediato & Vitalicio
-              </p>
+              <a href={checkoutUrl} className="text-amber-400 hover:text-amber-300 transition-colors text-lg font-medium flex items-center gap-2 animate-bounce">
+                👇 Descubre cómo funciona
+              </a>
 
-              <div className="flex items-center gap-4 text-stone-400 text-sm">
+              <div className="flex items-center gap-4 text-stone-400 text-sm mt-4">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map(i => (
                     <div key={i} className={`w-8 h-8 rounded-full border-2 border-[#0c0a09] bg-stone-700 flex items-center justify-center text-[10px] overflow-hidden`}>
@@ -52,7 +48,7 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
                     </div>
                   ))}
                 </div>
-                <p>Más de <span className="text-amber-400 font-bold">2.300 alumnos</span></p>
+                <p>Más de <span className="text-amber-400 font-bold">2.300 cristianos</span> en Latinoamérica ya estudiaron este material.</p>
               </div>
             </div>
           </div>

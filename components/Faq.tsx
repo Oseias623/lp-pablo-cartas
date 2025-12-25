@@ -40,44 +40,36 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
 export const Faq: React.FC = () => {
     const faqData = [
         {
-            question: "¿Cómo recibiré el acceso al material?",
-            answer: "Inmediatamente después de la confirmación del pago (generalmente en menos de 2 minutos para tarjeta), recibirás un correo electrónico con el enlace de acceso al área de miembros. Allí encontrarás todos los PDFs, audios y bonos organizados para comenzar tus estudios al instante. El acceso es inmediato y puedes descargar los materiales en tu celular, tablet o computadora. Más de 2.300 personas ya hicieron este proceso sin ningún problema."
+            question: "¿Necesito conocimientos bíblicos previos?",
+            answer: "No. Está diseñado para CUALQUIER persona que quiera entender a Pablo. Desde nuevos creyentes hasta maestros."
         },
         {
-            question: "¿El contenido es digital o físico?",
-            answer: "Todo el contenido es 100% digital. Recibes PDFs para descargar, audios en formato MP3 y acceso a un área exclusiva en línea. La ventaja es que puedes estudiar desde cualquier lugar, en cualquier momento, sin esperar envío. Además, puedes imprimir los PDFs si prefieres estudiar en papel."
+            question: "¿Es solo para nuevos cristianos?",
+            answer: "No. Funciona igual si eres nuevo o si ya estudiaste Pablo y sigues confundido."
         },
         {
-            question: "¿Para quién es este material?",
-            answer: "Este material fue creado para cristianos que desean entender las Cartas de Pablo de forma clara y práctica. Es perfecto para quien lee la Biblia pero siente dificultad con el lenguaje teológico, líderes de grupos pequeños que necesitan material de apoyo, predicadores buscando ideas para sermones, y estudiantes de teología que quieren una visión práctica de las epístolas. No importa tu nivel de conocimiento bíblico, el material fue hecho para ser accesible a todos. Tenemos alumnos desde nuevos convertidos hasta pastores con décadas de ministerio."
+            question: "¿Cuánto tiempo necesito invertir por día?",
+            answer: "Estudias a tu ritmo. Puedes avanzar en sesiones de 15-30 minutos cuando tengas tiempo."
         },
         {
-            question: "¿El pago es único o es una suscripción mensual?",
-            answer: "El pago es único. Pagas solo una vez y tienes acceso vitalicio al material. No existe cobro recurrente, tasas ocultas o sorpresas en la tarjeta. El valor que ves es el valor que pagas. Punto final."
+            question: "¿Cómo recibo el material?",
+            answer: "Inmediatamente por email. PDFs + audios + bonus. Todo digital."
         },
         {
-            question: "¿Cómo realizo el pago?",
-            answer: "Aceptamos tarjeta de crédito y otros métodos seguros disponibles en tu región. El ambiente de pago es 100% seguro, encriptado y procesado por una de las plataformas de productos digitales más grandes. Tus datos están completamente protegidos."
+            question: "¿Qué pasa si tengo dudas durante el estudio?",
+            answer: "Escríbenos a nuestro soporte. Respondemos en menos de 24 horas."
         },
         {
-            question: "¿El material tiene base teológica confiable?",
-            answer: "Absolutamente. Todo el contenido fue desarrollado con base en estudios bíblicos serios y referencias de teólogos respetados. La diferencia es que traducimos ese conocimiento profundo en un lenguaje accesible, sin perder la fidelidad al texto original. Tendrás claridad sin superficialidad, profundidad sin complicación."
+            question: "¿Sirve si ya estudié Pablo antes y me confundí?",
+            answer: "SÍ. Este método prioriza CONTEXTO sobre información académica. Es diferente a lo que viste antes."
         },
         {
-            question: "¿El contenido sirve para quien quiere predicar?",
-            answer: "Este es uno de los usos más populares del material. Tendrás acceso a bosquejos listos, ideas versículo por versículo, y mapas mentales que facilitan la preparación de sermones y estudios bíblicos. Muchos pastores y líderes ya utilizan nuestros materiales como base para sus ministraciones."
+            question: "¿El material está completamente en español?",
+            answer: "Sí, 100% en español latino neutro (México, Colombia, Argentina, etc.)"
         },
         {
-            question: "¿Y si no me gusta? ¿Tengo alguna garantía?",
-            answer: "Tienes 7 días de garantía incondicional. Si por cualquier motivo sientes que el material no cumplió tus expectativas, basta enviar un correo solicitando el reembolso. Devolvemos el 100% del valor invertido, sin preguntas y sin burocracia. Si no te adaptas, tu dinero vuelve garantizado."
-        },
-        {
-            question: "¿Por qué el precio es tan bajo? ¿Cuál es el truco?",
-            answer: "No hay truco. Este es un precio promocional de lanzamiento para LATAM. Nuestro objetivo ahora es alcanzar el máximo de cristianos posible y construir una base sólida de alumnos satisfechos. Por eso, estamos ofreciendo un valor muy por debajo de lo que el material realmente vale. Quien garantice ahora, asegura este precio para siempre."
-        },
-        {
-            question: "¿Puedo compartir el material con otras personas?",
-            answer: "El acceso es individual e intransferible. Cada compra da derecho a un único usuario. Si quieres regalar a alguien, puedes adquirir una segunda licencia. Respetamos mucho el trabajo invertido en la creación de este material y contamos con tu honestidad. Dicho esto, puedes y debes usar el material para enseñar a otros, ya sea en células, predicaciones o estudios en grupo."
+            question: "¿Puedo pedir reembolso si no me sirve?",
+            answer: "Sí, hasta 7 días después. Sin justificar. Sin demora."
         }
     ];
 

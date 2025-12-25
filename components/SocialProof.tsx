@@ -41,25 +41,46 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, role, location,
 );
 
 
-export const SocialProof: React.FC = () => {
+interface SocialProofProps {
+  checkoutUrl: string;
+}
+
+export const SocialProof: React.FC<SocialProofProps> = ({ checkoutUrl }) => {
   return (
     <section className="py-16 md:py-24 bg-slate-100">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-4">
-            Cristianos que Finalmente Entendieron a Pablo
+          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
+            Cristianos que Dejaron de Sentirse <br />
+            "Perdidos" al Leer a Pablo
           </h2>
-          <p className="text-base md:text-lg text-slate-600">
-            Mira lo que dicen algunas de las más de 2.300 personas que ya accedieron a este material y transformaron su comprensión de las Escrituras.
-          </p>
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonials.map(testimonial => (
-            <TestimonialCard key={testimonial.id} name={testimonial.name} role={testimonial.role} location={testimonial.location} quote={testimonial.quote} />
-          ))}
+          <TestimonialCard
+            name="Marta S."
+            role="Líder de célula"
+            location="Colombia"
+            quote="Antes leía Romanos y me perdía en el capítulo 3. Ahora entiendo el argumento completo. Lo uso para enseñar en mi célula cada semana."
+          />
+          <TestimonialCard
+            name="Carlos M."
+            role="Pastor asistente"
+            location="México"
+            quote="Siempre me quedaba en la superficie de Efesios. Ahora veo las cartas como lo que son: conversaciones urgentes. Cambió mi forma de leer toda la Biblia."
+          />
+          <TestimonialCard
+            name="Ana L."
+            role="Maestra bíblica"
+            location="Argentina"
+            quote="Pensaba que necesitaba seminario para entender a Pablo. Solo necesitaba el contexto correcto. Ahora enseño con seguridad y sin miedo."
+          />
         </div>
-        <div className="text-center mt-12">
-          <p className="text-slate-600 font-semibold">⭐ Evaluación media: 4.9/5 basada en 847 evaluaciones</p>
+
+        <div className="mt-12 text-center">
+          <a href={checkoutUrl} className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider text-sm md:text-base animate-pulse">
+            QUIERO ENTENDER A PABLO DE UNA VEZ
+          </a>
         </div>
       </div>
     </section>

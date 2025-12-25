@@ -1,7 +1,9 @@
 
 import React from 'react';
 import { Hero } from './components/Hero';
+import { Identification } from './components/Identification';
 import { About } from './components/About';
+import { Differentiation } from './components/Differentiation';
 import { Pricing } from './components/Pricing';
 import { Bonuses } from './components/Bonuses';
 import { Footer } from './components/Footer';
@@ -19,9 +21,11 @@ const App: React.FC = () => {
     <div className="bg-slate-50 text-slate-800 min-h-screen">
       <main>
         <Hero checkoutUrl={checkoutUrl} />
+        <Identification />
+        <SocialProof checkoutUrl={checkoutUrl} />
         <About />
-        <SocialProof />
-        <Author />
+        <Differentiation />
+        {/* <Author /> Author section removed as requested by the flow/focus on benefits and product */}
         <Bonuses checkoutUrl={checkoutUrl} />
         <Pricing checkoutUrl={checkoutUrl} />
         <Faq />

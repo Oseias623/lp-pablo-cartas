@@ -19,14 +19,11 @@ interface PricingProps {
     checkoutUrl: string;
 }
 
+
 export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
     return (
-        <section id="pricing" className="py-16 md:py-24 bg-slate-100">
+        <section id="pricing" className="py-16 md:py-24 bg-slate-100 overflow-hidden">
             <div className="container mx-auto px-6">
-                <div className="text-center max-w-3xl mx-auto mb-12">
-                    <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-4">Elige Tu Camino y Comienza Tu Transformación Ahora</h2>
-                    <p className="text-base md:text-lg text-slate-600">Entiende a Pablo con claridad, profundidad y recursos exclusivos.</p>
-                </div>
 
                 <div className="flex justify-center items-center">
                     {/* Oferta Única */}
@@ -35,66 +32,41 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                             <span className="bg-amber-400 text-slate-900 text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">⭐ OFERTA ESPECIAL</span>
                         </div>
                         <h3 className="text-2xl md:text-3xl font-bold text-center text-slate-800">Las Cartas de Pablo</h3>
-                        <p className="text-amber-500 mt-2 font-semibold text-center">La transformación completa para tu jornada.</p>
+                        <p className="text-slate-500 mt-2 font-medium text-center text-sm">Acceso Completo + Todos los Bonus</p>
 
                         <div className="my-6 text-center">
                             <p className="text-red-600 font-black leading-none">
                                 <span className="text-xl sm:text-2xl align-top">US$</span>
                                 <span className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">6.90</span>
                             </p>
-                            <p className="text-xs font-bold text-red-600 tracking-wider mt-1">PAGO ÚNICO</p>
+                            <p className="text-sm font-medium text-slate-500 mt-2">(El precio de un café... pero con resultado eterno)</p>
                         </div>
 
                         <ul className="space-y-4 mb-8 flex-grow text-left">
-                            <li className="flex items-start">
-                                <CheckIcon className="text-emerald-500 mt-1 mr-3 flex-shrink-0" />
-                                <span className="text-slate-700">
-                                    <strong className="text-slate-900 block">Estudios Completos de las Cartas Paulinas:</strong> La base sólida para entender la doctrina de la gracia, fe y vida cristiana.
-                                </span>
+                            <li className="flex items-center">
+                                <CheckIcon className="text-emerald-500 mr-3 flex-shrink-0" />
+                                <span className="text-slate-700 font-medium">Acceso inmediato por email</span>
                             </li>
-                            <li className="flex items-start">
-                                <CheckIcon className="text-emerald-500 mt-1 mr-3 flex-shrink-0" />
-                                <span className="text-slate-700">
-                                    <strong className="text-slate-900 block">Resúmenes de las Cartas en Podcast:</strong> Estudia a Pablo mientras conduces, entrenas o haces tareas.
-                                </span>
+                            <li className="flex items-center">
+                                <CheckIcon className="text-emerald-500 mr-3 flex-shrink-0" />
+                                <span className="text-slate-700 font-medium">Garantía incondicional de 7 días</span>
                             </li>
-                            <li className="flex items-start">
-                                <CheckIcon className="text-emerald-500 mt-1 mr-3 flex-shrink-0" />
-                                <span className="text-slate-700">
-                                    <strong className="text-slate-900 block">Bosquejos de Predicaciones Listos:</strong> Inspiración rápida y confiable para ministrar la Palabra.
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <CheckIcon className="text-emerald-500 mt-1 mr-3 flex-shrink-0" />
-                                <span className="text-slate-700">
-                                    <strong className="text-slate-900 block">Mapas Mentales de los Evangelios:</strong> Visualiza las conexiones entre Mateo, Marcos, Lucas y Juan.
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <CheckIcon className="text-emerald-500 mt-1 mr-3 flex-shrink-0" />
-                                <span className="text-slate-700">
-                                    <strong className="text-slate-900 block">+ Bonos Exclusivos Incluidos:</strong> Biblioteca completa de estudios bíblicos.
-                                </span>
-                            </li>
-                            <li className="flex items-start">
-                                <CheckIcon className="text-emerald-500 mt-1 mr-3 flex-shrink-0" />
-                                <span className="text-slate-700">
-                                    <strong className="text-slate-900 block">Acceso de por Vida:</strong> Estudia a tu ritmo, para siempre. Sin mensualidades.
-                                </span>
+                            <li className="flex items-center">
+                                <CheckIcon className="text-emerald-500 mr-3 flex-shrink-0" />
+                                <span className="text-slate-700 font-medium">Pago 100% seguro (Stripe)</span>
                             </li>
                         </ul>
+
                         <a
                             href={checkoutUrl}
                             className="w-full block text-center bg-gradient-to-br from-amber-500 to-amber-400 text-slate-900 font-bold py-3 px-4 sm:py-4 sm:px-8 rounded-lg shadow-lg hover:shadow-xl hover:from-amber-400 hover:to-amber-500 transform hover:scale-105 transition-all duration-300 text-sm sm:text-lg uppercase tracking-wider relative overflow-hidden btn-shine"
                         >
-                            QUIERO EL PAQUETE COMPLETO AHORA
+                            SÍ, QUIERO ACCESO AHORA
                         </a>
-                        <div className="bg-red-50 border border-red-200 text-red-700 text-center p-3 rounded-lg text-sm mt-6">
-                            ⏰ <strong>ATENCIÓN:</strong> Este precio especial de US$ 6.90 es válido solo durante esta promoción de lanzamiento.
+
+                        <div className="text-center mt-4 flex items-center justify-center gap-2 animate-pulse">
+                            <span className="text-red-600 text-sm font-bold">⏰ Oferta disponible por tiempo limitado</span>
                         </div>
-                        <p className="text-slate-400 text-xs font-semibold mt-3 text-center">
-                            ✅ Acceso Inmediato • ✅ Garantía de 7 Días • ✅ Acceso de por Vida
-                        </p>
                     </div>
                 </div>
 
@@ -103,11 +75,16 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                         <GuaranteeSealIcon />
                     </div>
                     <div>
-                        <h3 className="text-xl font-bold text-slate-900">Garantía Incondicional de 7 Días: Tu Dinero de Vuelta Sin Preguntas</h3>
-                        <p className="text-slate-600 mt-2">
-                            Confiamos tanto en la transformación que este material traerá a tu vida espiritual que asumimos todo el riesgo por ti. Tienes 7 días completos para explorar todo el material. Si, por cualquier motivo, no sientes que valió cada centavo, solo envía un único correo electrónico. Devolvemos el 100% de tu dinero. Sin preguntas incómodas, sin burocracia, sin letras pequeñas. El riesgo es totalmente nuestro.
+                        <h3 className="text-xl font-bold text-slate-900">🛡️ Garantía Incondicional de 7 Días <br />(Cero Preguntas. Cero Complicaciones.)</h3>
+                        <p className="text-slate-600 mt-2 mb-2">
+                            Prueba el material por 7 días completos. Si no te ayuda a entender a Pablo con más claridad, te devolvemos cada centavo.
                         </p>
-                        <p className="text-emerald-700 font-bold mt-3 text-lg">🛡️ RIESGO CERO PARA TI: O transformas tu comprensión de las Cartas de Pablo, o recibes tu dinero de vuelta. Así de simple.</p>
+                        <ul className="text-sm text-slate-500 space-y-1">
+                            <li>• Sin justificaciones.</li>
+                            <li>• Sin formularios largos.</li>
+                            <li>• Sin demoras.</li>
+                        </ul>
+                        <p className="text-emerald-700 font-bold mt-3 text-sm">Solo escribes y lo procesamos.</p>
                     </div>
                 </div>
 

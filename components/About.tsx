@@ -60,33 +60,55 @@ export const About: React.FC = () => {
     <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6">¿Sientes que Podrías Aprender Más, pero la Complejidad te Detiene?</h2>
-          <p className="text-base md:text-lg text-slate-600">
-            Abres Romanos, Gálatas o Efesios y sientes que estás leyendo otro idioma. Las palabras pasan por tus ojos, pero no llegan al corazón. La teología pesada y el lenguaje antiguo crean un muro entre tú y las verdades que Pablo quería transmitir.
-          </p>
+          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6">Esto es lo que vas a lograr:</h2>
+          <div className="h-1 w-24 bg-amber-500 mx-auto rounded-full"></div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <BenefitCard
             index={0}
-            title="Practicidad Total"
-            description="Termina cada estudio sabiendo exactamente cómo aplicar esa enseñanza el lunes por la mañana. Nada de teoría vacía. Actuarás diferente porque entenderás de verdad."
+            title="Sin Bloqueos"
+            description="Entiende versículos difíciles sin quedarte bloqueado. Avanza en tu lectura con fluidez."
           />
           <BenefitCard
             index={1}
-            title="Lenguaje Accesible"
-            description="Como tener un profesor paciente a tu lado, explicando cada concepto difícil con palabras que usas a diario. Sin términos en griego, sin citas de teólogos desconocidos."
+            title="Propósito Claro"
+            description="Lee cada carta sabiendo QUÉ PROBLEMA resolvía Pablo. El contexto ilumina el texto."
           />
           <BenefitCard
             index={2}
-            title="Sin Pérdida de Tiempo"
-            description="Estudios directos al grano. Entiendes lo esencial de cada carta sin necesitar horas de lectura complementaria. Tu tiempo es demasiado valioso para desperdiciarlo con rodeos."
+            title="Seguridad al Explicar"
+            description="Explica el texto con seguridad (sin miedo a equivocarte). Ideal para líderes y maestros."
           />
           <BenefitCard
             index={3}
-            title="Mapas Mentales Increíbles"
-            description="Visualiza la estructura completa de cada carta en una sola página. Conecta ideas y nunca más olvides lo que estudiaste. Tu mente funcionará como la de un estudioso experto."
+            title="Aplicación Inmediata"
+            description="Aplica el mensaje a tu vida esa misma semana. Sabiduría práctica, no solo teórica."
+          />
+          <BenefitCard
+            index={4}
+            title="Independencia"
+            description="Estudia sin depender de comentarios complicados. Desarrolla tu propio criterio bíblico."
+          />
+          <BenefitCard
+            index={5}
+            title="Visión Contextual"
+            description="Dejas de leer 'a ciegas' y empiezas a leer con contexto. Todo cobra sentido."
           />
         </div>
+
+        {/* Prova do Método */}
+        <div className="mt-16 text-center max-w-2xl mx-auto bg-slate-50 p-8 rounded-2xl border border-slate-100">
+          <p className="text-lg text-slate-700 font-medium mb-4">
+            Sí, está explicado versículo por versículo. <br />
+            Pero con contexto histórico, cultural y aplicación práctica.
+          </p>
+          <p className="text-xl font-bold text-slate-900">
+            No te damos más información. <br />
+            <span className="text-amber-600">Te damos COMPRENSIÓN.</span>
+          </p>
+        </div>
+
       </div>
     </section>
   );
