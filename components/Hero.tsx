@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
             Método Exclusivo
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-slate-50">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-slate-50 min-h-[3em] sm:min-h-[2.5em]">
             ¿Lees las Cartas de Pablo... <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">y terminas más confundido que antes?</span>
           </h1>
 
@@ -44,7 +44,7 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map(i => (
                     <div key={i} className={`w-8 h-8 rounded-full border-2 border-[#0c0a09] bg-stone-700 flex items-center justify-center text-[10px] overflow-hidden`}>
-                      <img src={`https://randomuser.me/api/portraits/thumb/men/${i * 10 + 5}.jpg`} alt="User" />
+                      <img src={`https://randomuser.me/api/portraits/thumb/men/${i * 10 + 5}.jpg`} alt="User" width="32" height="32" className="w-full h-full object-cover" />
                     </div>
                   ))}
                 </div>

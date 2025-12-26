@@ -27,9 +27,9 @@ def optimize_image(input_path, output_filename, max_width=None, quality=80):
 input_hero = 'assets/bundle-mockup.png'
 if os.path.exists(input_hero):
     # Desktop version (800px width)
-    optimize_image(input_hero, 'hero-desktop.webp', max_width=800, quality=85)
+    optimize_image(input_hero, 'hero-desktop.webp', max_width=800, quality=75)
     # Mobile version (480px width) - Critical for Mobile Score
-    optimize_image(input_hero, 'hero-mobile.webp', max_width=480, quality=80) 
+    optimize_image(input_hero, 'hero-mobile.webp', max_width=480, quality=70) 
 else:
     print(f"File not found: {input_hero}")
 
