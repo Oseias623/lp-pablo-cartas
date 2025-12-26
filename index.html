@@ -32,6 +32,10 @@
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Lato:wght@400;700&display=swap"
     rel="stylesheet">
 
+  <!-- Preload Critical Hero Image with Response Sizes -->
+  <link rel="preload" as="image" href="/hero-desktop.webp" imagesrcset="/hero-mobile.webp 480w, /hero-desktop.webp 800w"
+    imagesizes="(max-width: 640px) 480px, 800px" fetchpriority="high">
+
   <script type="importmap">
 {
   "imports": {

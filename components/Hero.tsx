@@ -1,6 +1,5 @@
 import React from 'react';
-import heroDesktop from '../assets/hero-desktop.webp';
-import heroMobile from '../assets/hero-mobile.webp';
+// Imports removed: Assets are now loaded from public/ for preloading support
 
 interface HeroProps {
   checkoutUrl: string;
@@ -63,8 +62,8 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
             <div className="absolute inset-0 bg-gradient-to-tr from-amber-500/20 to-purple-500/0 rounded-full blur-[80px] group-hover:bg-amber-500/30 transition-all duration-700"></div>
 
             <img
-              src={heroDesktop}
-              srcSet={`${heroMobile} 480w, ${heroDesktop} 800w`}
+              src="/hero-desktop.webp"
+              srcSet="/hero-mobile.webp 480w, /hero-desktop.webp 800w"
               sizes="(max-width: 640px) 480px, 800px"
               alt="Colección Completa - Las Cartas de Pablo"
               width={800}
