@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Custom classes preserved from original HTML style block */
+.btn-shine {
+    position: relative;
+    overflow: hidden;
+    border-radius: inherit; /* Ensure radius is inherited for clipping */
+    z-index: 1; /* Ensure stacking context */
+    -webkit-mask-image: -webkit-radial-gradient(white, black); /* Force clipping in WebKit */
+}
+
+.btn-shine::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s ease;
+}
+
+.btn-shine:hover::before {
+    left: 100%; /* Move across the button to the right */
+}

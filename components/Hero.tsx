@@ -64,6 +64,10 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
             <img
               src={ebookMockup}
               alt="Colección Completa - Las Cartas de Pablo"
+              width={800}
+              height={800}
+              fetchPriority="high"
+              loading="eager"
               className="relative z-10 w-full h-auto object-contain drop-shadow-2xl transition-transform duration-700"
             />
           </div>
