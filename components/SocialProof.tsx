@@ -29,12 +29,12 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, role, location,
     <div className="flex mb-4">
       {[...Array(5)].map((_, i) => <StarIcon key={i} />)}
     </div>
-    <p className="text-slate-600 mb-6 italic flex-grow">"{quote}"</p>
+    <p className="text-slate-600 mb-6 italic flex-grow">“{quote}”</p>
     <div className="flex items-center mt-auto">
       <AvatarIcon />
       <div className="ml-4">
         <p className="font-bold text-slate-800">{name}</p>
-        <p className="text-sm text-slate-500">{role}, {location}</p>
+        <p className="text-sm text-slate-500">{role} · {location}</p>
       </div>
     </div>
   </div>
@@ -51,8 +51,8 @@ export const SocialProof: React.FC<SocialProofProps> = ({ checkoutUrl }) => {
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
-            Cristianos que Dejaron de Sentirse <br />
-            "Perdidos" al Leer a Pablo
+            Cristianos que dejaron de sentirse <br />
+            “perdidos” al leer a Pablo
           </h2>
         </div>
 
@@ -61,7 +61,7 @@ export const SocialProof: React.FC<SocialProofProps> = ({ checkoutUrl }) => {
             name="Marta S."
             role="Líder de célula"
             location="Colombia"
-            quote="Antes leía Romanos y me perdía en el capítulo 3. Ahora entiendo el argumento completo. Lo uso para enseñar en mi célula cada semana."
+            quote="Antes leía Romanos y me perdía en el capítulo 3. Ahora entiendo el argumento completo y lo uso para enseñar en mi célula cada semana."
           />
           <TestimonialCard
             name="Carlos M."
@@ -73,13 +73,13 @@ export const SocialProof: React.FC<SocialProofProps> = ({ checkoutUrl }) => {
             name="Ana L."
             role="Maestra bíblica"
             location="Argentina"
-            quote="Pensaba que necesitaba seminario para entender a Pablo. Solo necesitaba el contexto correcto. Ahora enseño con seguridad y sin miedo."
+            quote="Pensaba que necesitaba un seminario para entender a Pablo. Solo necesitaba el contexto correcto. Ahora enseño con seguridad y sin miedo."
           />
         </div>
 
         <div className="mt-12 text-center">
           <a href={checkoutUrl} className="inline-block bg-amber-500 hover:bg-amber-400 text-slate-900 font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider text-sm md:text-base animate-pulse">
-            QUIERO ENTENDER A PABLO DE UNA VEZ
+            ➜ QUIERO ENTENDER A PABLO DE UNA VEZ
           </a>
         </div>
       </div>
