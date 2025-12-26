@@ -60,53 +60,53 @@ export const About: React.FC = () => {
     <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6">Esto es lo que vas a lograr:</h2>
+          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6">Esto es donde Pablo empieza a ayudarte en la vida real</h2>
           <div className="h-1 w-24 bg-amber-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-center">
           <BenefitCard
             index={0}
-            title="Sin Bloqueos"
-            description="Entiende versículos difíciles sin quedarte bloqueado. Avanza en tu lectura con fluidez."
+            title="Ansiedad y Cansancio Interior"
+            description="Aprendes a leer a Pablo sin culpa ni presión espiritual. Entiendes la gracia de forma práctica y encuentras descanso en medio de la ansiedad y el agotamiento emocional."
           />
           <BenefitCard
             index={1}
-            title="Propósito Claro"
-            description="Lee cada carta sabiendo QUÉ PROBLEMA resolvía Pablo. El contexto ilumina el texto."
+            title="Matrimonio y Relaciones"
+            description="Descubres cómo aplicar los principios de Pablo para mejorar la comunicación, resolver conflictos y vivir relaciones más sanas sin religiosidad dura."
           />
           <BenefitCard
             index={2}
-            title="Seguridad al Explicar"
-            description="Explica el texto con seguridad (sin miedo a equivocarte). Ideal para líderes y maestros."
+            title="Dinero, Trabajo y Decisiones"
+            description="Comprendes lo que Pablo realmente enseñó sobre provisión, contentamiento y responsabilidad, sin culpa por prosperar ni miedo al futuro."
           />
           <BenefitCard
             index={3}
-            title="Aplicación Inmediata"
-            description="Aplica el mensaje a tu vida esa misma semana. Sabiduría práctica, no solo teórica."
+            title="Fe para el Día a Día"
+            description="Dejas de leer la Biblia como teoría. Empiezas a aplicar lo que lees en decisiones reales, conversaciones difíciles y momentos de duda."
           />
           <BenefitCard
             index={4}
-            title="Independencia"
-            description="Estudia sin depender de comentarios complicados. Desarrolla tu propio criterio bíblico."
-          />
-          <BenefitCard
-            index={5}
-            title="Visión Contextual"
-            description="Dejas de leer 'a ciegas' y empiezas a leer con contexto. Todo cobra sentido."
+            title="Comunidad y Seguridad Espiritual"
+            description="Lees con claridad y seguridad, sin depender de interpretaciones ajenas. Ganas confianza para enseñar, compartir y caminar con otros sin miedo a equivocarte."
           />
         </div>
 
-        {/* Prova do Método */}
-        <div className="mt-16 text-center max-w-2xl mx-auto bg-slate-50 p-8 rounded-2xl border border-slate-100">
+        {/* Closing Section */}
+        <div className="mt-16 text-center max-w-3xl mx-auto bg-slate-50 p-8 rounded-2xl border border-slate-100">
           <p className="text-lg text-slate-700 font-medium mb-4">
-            Sí, está explicado versículo por versículo. <br />
-            Pero con contexto histórico, cultural y aplicación práctica.
+            Todo esto con un enfoque simple, humano y sin juicio
           </p>
-          <p className="text-xl font-bold text-slate-900">
-            No te damos más información. <br />
-            <span className="text-amber-600">Te damos COMPRENSIÓN.</span>
+          <p className="text-slate-600 mb-6">
+            Porque Pablo no escribió para cristianos perfectos,<br />
+            sino para personas reales aprendiendo a vivir la fe en medio de la vida.
           </p>
+          <div className="pt-4 border-t border-slate-200">
+            <h3 className="text-2xl font-black text-slate-900 mb-2">Las Cartas de Pablo</h3>
+            <p className="text-amber-600 font-bold text-lg">
+              Enseñanzas prácticas para tu vida — hoy.
+            </p>
+          </div>
         </div>
 
       </div>
