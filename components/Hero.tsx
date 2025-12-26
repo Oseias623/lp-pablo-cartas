@@ -64,7 +64,7 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
             <img
               src="/hero-desktop.webp"
               srcSet="/hero-mobile.webp 480w, /hero-desktop.webp 800w"
-              sizes="(max-width: 768px) 95vw, 600px"
+              sizes="(max-width: 768px) 90vw, 550px"
               alt="Colección Completa - Las Cartas de Pablo"
               width={800}
               height={800}
