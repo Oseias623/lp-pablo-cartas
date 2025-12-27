@@ -11,40 +11,66 @@ export const Differentiation: React.FC = () => {
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="max-w-4xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl">
-                    <div className="grid md:grid-cols-2 gap-8 items-center">
+                    <div className="grid md:grid-cols-2 gap-12 items-center">
 
-                        <div className="text-center md:text-left space-y-6">
-                            <h3 className="text-2xl md:text-3xl font-bold leading-tight">
-                                La mayoría de estudios bíblicos te dan <span className="text-slate-400 decoration-slate-500 line-through">INFORMACIÓN</span>.
-                                <br />
-                                <span className="text-amber-400 block mt-2 text-3xl md:text-4xl">Esto te da COMPRENSIÓN.</span>
-                            </h3>
-                        </div>
-
-                        <div className="space-y-4">
-                            <div className="bg-slate-800/50 p-4 rounded-xl border border-slate-700 flex items-center gap-4 opacity-60">
-                                <span className="text-2xl">📚</span>
-                                <div>
-                                    <p className="text-slate-400 text-sm font-bold uppercase tracking-wider">Información</p>
-                                    <p className="text-slate-300">Más datos que memorizar.</p>
-                                </div>
+                        <div className="space-y-6">
+                            <div>
+                                <h3 className="text-2xl font-bold leading-tight mb-2 opacity-80">
+                                    La mayoría de los estudios bíblicos te dan <br />
+                                    <span className="text-slate-400 decoration-slate-500 line-through text-3xl">INFORMACIÓN.</span>
+                                </h3>
+                                <p className="text-slate-400 text-lg">
+                                    Más datos. Más conceptos. <br /> Más cosas para memorizar.
+                                </p>
                             </div>
 
-                            <div className="bg-amber-900/30 p-4 rounded-xl border border-amber-500/50 flex items-center gap-4 shadow-lg transform scale-105 transition-transform">
-                                <span className="text-2xl">💡</span>
+                            <p className="text-slate-300 italic border-l-2 border-slate-600 pl-4">
+                                "Pero cuando estás cansado, ansioso o cargando culpa… eso no es lo que necesitas."
+                            </p>
+                        </div>
+
+                        <div className="relative">
+                            {/* Connector line for mobile/desktop */}
+                            <div className="hidden md:block absolute left-[-24px] top-1/2 w-6 h-[1px] bg-amber-500/50"></div>
+
+                            <div className="space-y-6">
                                 <div>
-                                    <p className="text-amber-400 text-sm font-bold uppercase tracking-wider">Comprensión</p>
-                                    <p className="text-white font-medium">Todo finalmente encaja.</p>
+                                    <h3 className="text-3xl font-black text-amber-500 mb-2">
+                                        Esto te da COMPRENSIÓN.
+                                    </h3>
+                                    <p className="text-white/90 text-lg font-medium leading-relaxed">
+                                        Comprensión que encaja. <br />
+                                        Comprensión que libera.
+                                    </p>
                                 </div>
+                                <p className="text-white/80">
+                                    Comprensión que te permite leer sin miedo y sin sentir que nunca es suficiente.
+                                </p>
                             </div>
                         </div>
 
                     </div>
 
-                    <div className="mt-8 text-center border-t border-white/10 pt-8">
-                        <p className="text-xl md:text-2xl font-serif italic text-slate-200">
-                            "Y cuando encaja... <span className="text-amber-400 not-italic font-bold">ya no te confundes.</span>"
+                    <div className="mt-12 text-center border-t border-white/10 pt-8 space-y-4">
+                        <p className="text-2xl md:text-3xl font-serif italic text-white">
+                            "Cuando todo encaja… <br className="md:hidden" /> <span className="text-amber-400 not-italic font-bold">ya no te confundes.</span>"
                         </p>
+                        <div className="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                            <p>Lees con calma. Entiendes el propósito.</p>
+                            <p className="mt-2 text-white font-medium">Y la fe deja de ser presión para convertirse en descanso.</p>
+                        </div>
+                    </div>
+
+                    {/* Quick Visual Comparison */}
+                    <div className="grid grid-cols-2 gap-4 mt-8 pt-8 border-t border-white/5">
+                        <div className="text-center opacity-50 contrast-50 grayscale transition-all duration-500 hover:grayscale-0 hover:opacity-100">
+                            <p className="text-xs font-bold uppercase tracking-widest mb-1">Información</p>
+                            <p className="text-sm">Más datos que memorizar.</p>
+                        </div>
+                        <div className="text-center">
+                            <p className="text-xs font-bold uppercase tracking-widest text-amber-500 mb-1">Comprensión</p>
+                            <p className="text-sm font-bold text-white">Todo finalmente encaja.</p>
+                        </div>
                     </div>
                 </div>
             </div>
