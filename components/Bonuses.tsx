@@ -1,9 +1,34 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-const BookIcon: React.FC = () => <span className="text-3xl">📘</span>;
-const HeartIcon: React.FC = () => <span className="text-3xl">💑</span>;
-const DoveIcon: React.FC = () => <span className="text-3xl">🕊️</span>;
-const CalendarIcon: React.FC = () => <span className="text-3xl">🗓️</span>;
+const BookIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+    </svg>
+);
+
+const HeartIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+    </svg>
+);
+
+const DoveIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0 3.517-1.009 6.799-2.753 9.571m-3.44-2.04l.054-.09A13.916 13.916 0 008 11a4 4 0 118 0c0 1.017-.07 2.019-.203 3m-2.118 6.844A21.88 21.88 0 0015.171 17m3.839 1.132c.645-2.266.99-4.659.99-7.132A8 8 0 008 4.07M3 15.364c.64-1.319 1-2.8 1-4.364 0-1.457.2-2.848.578-4.182m.069-4.819c.774-1.644 1.76-3.138 2.922-4.453l.261-.284" />
+    </svg>
+);
+
+const CalendarIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+    </svg>
+);
+
+const CheckIcon: React.FC = () => (
+    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-emerald-500 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+    </svg>
+);
 
 const bonusesData = [
     {
@@ -65,12 +90,11 @@ interface BonusCardProps {
     subtitle: string;
     description: string;
     checkpoints: string[];
-    value: number;
     icon: React.FC;
     index: number;
 }
 
-const BonusCard: React.FC<BonusCardProps> = ({ title, subtitle, description, checkpoints, value, icon: Icon, index }) => {
+const BonusCard: React.FC<BonusCardProps> = ({ title, subtitle, description, checkpoints, icon: Icon, index }) => {
     const [isVisible, setIsVisible] = useState(false);
     const cardRef = useRef<HTMLDivElement>(null);
 
@@ -114,19 +138,14 @@ const BonusCard: React.FC<BonusCardProps> = ({ title, subtitle, description, che
 
             <p className="text-slate-600 mb-6 text-sm leading-relaxed">{description}</p>
 
-            <ul className="space-y-2 mb-6 flex-grow">
+            <ul className="space-y-3 mb-2 flex-grow">
                 {checkpoints.map((point, i) => (
                     <li key={i} className="flex items-start gap-2 text-sm text-slate-700">
-                        <span className="text-amber-500 font-bold mt-0.5">✔</span>
-                        {point}
+                        <CheckIcon />
+                        <span className="leading-snug">{point}</span>
                     </li>
                 ))}
             </ul>
-
-            <div className="pt-4 border-t border-slate-100 mt-auto">
-                <span className="text-slate-400 text-xs uppercase font-bold tracking-wider block mb-1">Valor Real</span>
-                <span className="text-slate-800 font-bold text-lg">US${value}</span>
-            </div>
         </div>
     );
 };
@@ -169,7 +188,6 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                             subtitle={bonus.subtitle}
                             description={bonus.description}
                             checkpoints={bonus.checkpoints}
-                            value={bonus.value}
                             icon={bonus.icon}
                             index={index}
                         />
@@ -200,22 +218,6 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                     <p className="text-slate-500 text-sm font-medium italic">
                         No son materiales genéricos. Son guías prácticas para problemas reales.
                     </p>
-                </div>
-
-                {/* Secondary CTA */}
-                <div className="mt-12 text-center">
-                    <a
-                        href={checkoutUrl}
-                        className="inline-block text-center bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-lg uppercase tracking-wider whitespace-normal md:whitespace-nowrap w-full md:w-auto"
-                    >
-                        ➜ QUIERO EL PLAN PREMIUM CON LOS 4 BONOS <br />
-                        <span className="text-xs md:text-sm font-medium opacity-90 normal-case">US$19.97 (o 3x $6.99)</span>
-                    </a>
-                    <div className="mt-4 flex flex-wrap justify-center gap-4 text-xs md:text-sm text-slate-500 font-medium">
-                        <span className="flex items-center gap-1">✅ Incluye las 13 Cartas + Áudios + Bonos</span>
-                        <span className="flex items-center gap-1">✅ Acceso de por vida</span>
-                        <span className="flex items-center gap-1">✅ Garantía de 7 días</span>
-                    </div>
                 </div>
             </div>
         </section>
