@@ -37,7 +37,7 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                         <div className="my-6 text-center">
                             <p className="text-red-600 font-black leading-none">
                                 <span className="text-xl sm:text-2xl align-top">US$</span>
-                                <span className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">6.90</span>
+                                <span className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">9.90</span>
                             </p>
                             <p className="text-sm font-medium text-slate-500 mt-2">(El precio de un café... pero con resultado eterno)</p>
                         </div>
