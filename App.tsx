@@ -37,7 +37,7 @@ const App: React.FC = () => {
       </main>
       <Suspense fallback={null}>
         <Footer />
-        <MobileStickyCta checkoutUrl={checkoutUrl} />
+        <MobileStickyCta />
       </Suspense>
     </div>
   );
