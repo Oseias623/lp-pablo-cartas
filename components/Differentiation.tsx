@@ -72,6 +72,12 @@ export const Differentiation: React.FC = () => {
                             <p className="text-sm font-bold text-white">Todo finalmente encaja.</p>
                         </div>
                     </div>
+
+                    <div className="mt-12 text-center">
+                        <a href="#pricing" className="inline-block border-2 border-amber-500 text-amber-500 font-bold py-3 px-8 rounded-full hover:bg-amber-500 hover:text-slate-900 transition-all duration-300 uppercase tracking-widest text-sm">
+                            QUIERO ESTA COMPRENSIÓN
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

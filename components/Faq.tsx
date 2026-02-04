@@ -86,6 +86,13 @@ export const Faq: React.FC = () => {
                         <FaqItem key={index} question={item.question} answer={item.answer} />
                     ))}
                 </div>
+
+                <div className="mt-12 text-center">
+                    <p className="text-slate-600 mb-4 font-medium">¿Listo para empezar tu jornada?</p>
+                    <a href="#pricing" className="inline-block bg-slate-900 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:bg-slate-800 transition-all duration-300 uppercase tracking-wider">
+                        SI, QUIERO ACCESO INMEDIATO
+                    </a>
+                </div>
             </div>
         </section>
     );

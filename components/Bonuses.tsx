@@ -218,6 +218,12 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                     <p className="text-slate-500 text-sm font-medium italic">
                         No son materiales genéricos. Son guías prácticas para problemas reales.
                     </p>
+
+                    <div className="mt-8">
+                        <a href="#pricing" className="inline-block bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider text-sm">
+                            GARANTIZAR MIS BONOS ➜
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

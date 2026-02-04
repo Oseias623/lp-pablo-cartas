@@ -27,19 +27,19 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
 
                 <div className="flex justify-center items-center">
                     {/* Oferta Única */}
-                    <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-lg border-4 border-amber-400 relative transition-all duration-300 hover:-translate-y-2">
-                        <div className="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2">
-                            <span className="bg-amber-400 text-slate-900 text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wider whitespace-nowrap">⭐ OFERTA ESPECIAL</span>
+                    <div className="bg-white p-6 md:p-8 rounded-xl shadow-2xl w-full max-w-lg border-4 border-amber-400 relative transition-all duration-300 hover:-translate-y-2 mt-4 md:mt-0">
+                        <div className="absolute -top-4 left-1/2 -translate-x-1/2 md:top-0 md:-translate-y-1/2">
+                            <span className="bg-red-600 text-white text-xs md:text-sm font-bold px-4 py-1 rounded-full uppercase tracking-wider whitespace-nowrap shadow-md animate-pulse">🔥 OFERTA LIMITADA</span>
                         </div>
-                        <h3 className="text-2xl md:text-3xl font-bold text-center text-slate-800">Las Cartas de Pablo</h3>
-                        <p className="text-slate-500 mt-2 font-medium text-center text-sm">Acceso Completo + Todos los Bonus</p>
+                        <h3 className="text-2xl md:text-3xl font-bold text-center text-slate-900 leading-tight">La Colección Completa: <br /> <span className="text-amber-500">Entiende a Pablo, Transforma tu Fe.</span></h3>
+                        <p className="text-slate-500 mt-4 font-medium text-center text-sm">Acceso Inmediato + Todos los Bonus</p>
 
                         <div className="my-6 text-center">
                             <p className="text-red-600 font-black leading-none">
                                 <span className="text-xl sm:text-2xl align-top">US$</span>
                                 <span className="text-5xl sm:text-6xl lg:text-7xl tracking-tighter">9.90</span>
                             </p>
-                            <p className="text-sm font-medium text-slate-500 mt-2">(El precio de un café... pero con resultado eterno)</p>
+                            <p className="text-sm font-medium text-slate-500 mt-2">(El precio de un café... pero con valor eterno)</p>
                         </div>
 
                         <ul className="space-y-4 mb-8 flex-grow text-left">

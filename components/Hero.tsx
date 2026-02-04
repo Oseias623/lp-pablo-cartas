@@ -23,9 +23,8 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
             Método Exclusivo
           </div>
 
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-slate-50 min-h-[3em] sm:min-h-[2.5em]">
-            Si Sientes Que Nunca Haces <span className="block text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">lo Suficiente para Dios...</span>
-            <span className="block mt-2 text-3xl sm:text-4xl lg:text-5xl text-white">Pablo Escribió Estas Cartas Exactamente para Ti.</span>
+          <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 text-slate-50 min-h-[3em] sm:min-h-[2.5em]">
+            Descubre el <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">Secreto de Pablo</span> para Nunca Más Sentirte <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-amber-500">Insuficiente ante Dios.</span>
           </h1>
 
           <p className="text-lg sm:text-xl text-stone-300 mb-8 max-w-2xl leading-relaxed">
@@ -35,10 +34,9 @@ export const Hero: React.FC<HeroProps> = ({ checkoutUrl }) => {
           <div className="flex flex-col items-center lg:items-start gap-6 w-full">
 
 
-            <div className="flex flex-col items-center lg:items-start gap-3">
-              <a href={checkoutUrl} className="text-amber-400 hover:text-amber-300 transition-colors text-lg font-medium flex items-center gap-2 animate-bounce">
-                ➜ QUIERO LEER SIN CULPA NI JUICIO
-              </a>
+            <div className="flex flex-col items-center lg:items-start gap-4 w-full">
+              {/* CTA Removed to reduce curiosity clicks */}
+
 
               <div className="flex items-center gap-4 text-stone-400 text-sm mt-4">
                 <div className="flex -space-x-2">

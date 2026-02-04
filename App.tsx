@@ -7,11 +7,11 @@ const SocialProof = React.lazy(() => import('./components/SocialProof').then(mod
 const About = React.lazy(() => import('./components/About').then(module => ({ default: module.About })));
 const Differentiation = React.lazy(() => import('./components/Differentiation').then(module => ({ default: module.Differentiation })));
 const Bonuses = React.lazy(() => import('./components/Bonuses').then(module => ({ default: module.Bonuses })));
-const IsThisForMe = React.lazy(() => import('./components/IsThisForMe').then(module => ({ default: module.IsThisForMe })));
 const Pricing = React.lazy(() => import('./components/Pricing').then(module => ({ default: module.Pricing })));
 const Faq = React.lazy(() => import('./components/Faq').then(module => ({ default: module.Faq })));
 const FinalCta = React.lazy(() => import('./components/FinalCta').then(module => ({ default: module.FinalCta })));
 const Footer = React.lazy(() => import('./components/Footer').then(module => ({ default: module.Footer })));
+const MobileStickyCta = React.lazy(() => import('./components/MobileStickyCta').then(module => ({ default: module.MobileStickyCta })));
 
 const App: React.FC = () => {
   // Checkout link
@@ -30,7 +30,6 @@ const App: React.FC = () => {
           <About />
           <Differentiation />
           <Bonuses checkoutUrl={checkoutUrl} />
-          <IsThisForMe />
           <Pricing checkoutUrl={checkoutUrl} />
           <Faq />
           <FinalCta checkoutUrl={checkoutUrl} />
@@ -38,6 +37,7 @@ const App: React.FC = () => {
       </main>
       <Suspense fallback={null}>
         <Footer />
+        <MobileStickyCta checkoutUrl={checkoutUrl} />
       </Suspense>
     </div>
   );

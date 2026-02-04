@@ -106,6 +106,11 @@ export const About: React.FC = () => {
             <p className="text-amber-600 font-bold text-lg">
               Enseñanzas prácticas para tu vida — hoy.
             </p>
+            <div className="mt-8">
+              <a href="#pricing" className="inline-block bg-slate-900 text-amber-500 font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg hover:bg-slate-800 transition-all uppercase tracking-wider text-sm">
+                VER OFERTA ESPECIAL ➜
+              </a>
+            </div>
           </div>
         </div>
 
