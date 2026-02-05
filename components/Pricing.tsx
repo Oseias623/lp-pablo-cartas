@@ -25,99 +25,72 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
         <section id="pricing" className="py-16 md:py-24 bg-gradient-to-b from-slate-50 to-slate-100 overflow-hidden font-sans">
             <div className="container mx-auto px-6">
 
-                <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8 max-w-6xl mx-auto">
+                <div className="max-w-xl mx-auto">
+                    {/* Single Consolidated Card */}
+                    <div className="bg-white p-8 md:p-10 rounded-2xl shadow-2xl border-2 border-amber-400 relative transition-transform duration-300 hover:-translate-y-1">
 
-                    {/* Left Column: The "Stack" (Value) */}
-                    <div className="lg:w-1/2 flex flex-col justify-center">
-                        <span className="text-amber-600 font-bold tracking-widest uppercase text-sm mb-2">LO QUE RECIBES HOY</span>
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
-                            Todo lo que necesitas para <span className="text-amber-500">entender a Pablo</span> (finalmente).
-                        </h2>
-                        <p className="text-slate-600 text-lg mb-8 leading-relaxed">
-                            No es solo un libro digital. Es un sistema completo de desbloqueo espiritual para tu lectura bíblica.
-                        </p>
+                        {/* Scarcity Banner */}
+                        <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white px-6 py-2 rounded-full font-bold uppercase tracking-wider text-sm shadow-lg animate-pulse whitespace-nowrap z-10">
+                            ⏳ Oferta Expira Pronto
+                        </div>
 
-                        <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 mb-8">
-                            <ul className="space-y-4">
+                        <div className="text-center mt-6">
+                            <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-2 leading-tight">
+                                Todo lo que necesitas para <span className="text-amber-500">entender a Pablo</span>
+                            </h2>
+                            <p className="text-slate-500 font-medium mb-6">Acceso Total + 4 Bonus GRATIS</p>
+
+                            {/* Price Section */}
+                            <div className="flex justify-center items-end gap-2 opacity-50 mb-1">
+                                <span className="text-slate-400 text-lg font-bold line-through">Valor Real: US$157</span>
+                            </div>
+                            <div className="flex justify-center items-center gap-2">
+                                <span className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">US$09.90</span>
+                            </div>
+                            <p className="text-emerald-600 font-bold bg-emerald-50 inline-block px-3 py-1 rounded-lg mt-3 text-sm mb-8">
+                                🎉 Ahorras 92% HOY
+                            </p>
+                        </div>
+
+                        {/* Deliverables List (Inside Card) */}
+                        <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 mb-8 text-left">
+                            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-200 pb-2">Lo que recibes hoy:</h3>
+                            <ul className="space-y-3">
                                 <li className="flex items-start">
-                                    <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-1"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
-                                    <div>
-                                        <span className="font-bold text-slate-800">📖 Libro Digital "Las Cartas de Pablo"</span>
-                                        <p className="text-sm text-slate-500">La guía definitiva para entender el contexto histórico y teológico sin complicaciones.</p>
-                                    </div>
+                                    <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-0.5 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
+                                    <span className="font-bold text-slate-800 text-sm md:text-base">Las 13 Cartas de Pablo detalladas versículo por versículo</span>
                                 </li>
-                                <li className="flex items-start">
-                                    <div className="bg-amber-100 p-1 rounded-full mr-3 mt-1"><CheckIcon className="text-amber-600 w-4 h-4" /></div>
-                                    <div>
-                                        <span className="font-bold text-slate-800">⚡ Bono 1: Pablo y la Ansiedad</span>
-                                        <p className="text-sm text-slate-500">Manual práctico para aplicar la paz de Dios en tu mente.</p>
-                                    </div>
+                                <li className="flex items-center">
+                                    <div className="bg-emerald-100 p-1 rounded-full mr-3 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
+                                    <span className="font-medium text-slate-700 text-sm md:text-base">Resumen en audio de las 13 cartas</span>
                                 </li>
-                                <li className="flex items-start">
-                                    <div className="bg-amber-100 p-1 rounded-full mr-3 mt-1"><CheckIcon className="text-amber-600 w-4 h-4" /></div>
-                                    <div>
-                                        <span className="font-bold text-slate-800">💍 Bono 2: Pablo y el Matrimonio</span>
-                                        <p className="text-sm text-slate-500">Principios de amor y respeto para relaciones reales.</p>
-                                    </div>
+                                <li className="flex items-center">
+                                    <div className="bg-emerald-100 p-1 rounded-full mr-3 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
+                                    <span className="font-medium text-slate-700 text-sm md:text-base">Acceso inmediato a la App</span>
                                 </li>
-                                <li className="flex items-start">
-                                    <div className="bg-amber-100 p-1 rounded-full mr-3 mt-1"><CheckIcon className="text-amber-600 w-4 h-4" /></div>
-                                    <div>
-                                        <span className="font-bold text-slate-800">🕊️ Bono 3: Culpa Religiosa</span>
-                                        <p className="text-sm text-slate-500">Cómo liberarte del peso de "nunca ser suficiente".</p>
-                                    </div>
-                                </li>
-                                <li className="flex items-start">
-                                    <div className="bg-amber-100 p-1 rounded-full mr-3 mt-1"><CheckIcon className="text-amber-600 w-4 h-4" /></div>
-                                    <div>
-                                        <span className="font-bold text-slate-800">📅 Bono 4: Pablo Día a Día</span>
-                                        <p className="text-sm text-slate-500">Guía de decisiones prácticas para la vida cotidiana.</p>
-                                    </div>
+                                <li className="flex items-center">
+                                    <div className="bg-emerald-100 p-1 rounded-full mr-3 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
+                                    <span className="font-medium text-slate-700 text-sm md:text-base">Acceso Vitalicio (De por vida)</span>
                                 </li>
                             </ul>
                         </div>
-                    </div>
 
-                    {/* Right Column: The Offer Card */}
-                    <div className="lg:w-1/2 flex items-center">
-                        <div className="bg-white p-8 md:p-10 rounded-2xl shadow-2xl w-full border-2 border-amber-400 relative transition-all duration-300 hover:-translate-y-1">
+                        <a
+                            href={checkoutUrl}
+                            className="w-full block text-center bg-gradient-to-br from-amber-500 to-amber-400 text-slate-900 font-bold py-4 px-6 rounded-xl shadow-xl hover:shadow-2xl hover:from-amber-400 hover:to-amber-500 transform hover:scale-[1.02] transition-all duration-300 text-lg uppercase tracking-wider relative overflow-hidden group mb-6"
+                        >
+                            <span className="relative z-10 flex items-center justify-center gap-2">
+                                DESCARGAR AHORA MISMO <span className="group-hover:translate-x-1 transition-transform">➜</span>
+                            </span>
+                        </a>
 
-                            {/* Scarcity Banner */}
-                            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-red-600 text-white px-6 py-2 rounded-full font-bold uppercase tracking-wider text-sm shadow-lg animate-pulse whitespace-nowrap">
-                                ⏳ Oferta Expira Pronto
+                        <div className="flex flex-col gap-4">
+                            <div className="flex justify-center gap-3 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                                <span className="text-xs font-bold border border-slate-300 rounded px-2 py-1">🔒 SSL Secure</span>
+                                <span className="text-xs font-bold border border-slate-300 rounded px-2 py-1">🛡️ Privacidad</span>
                             </div>
 
-                            <div className="text-center mt-6 mb-8">
-                                <p className="text-slate-500 font-medium text-lg mb-2">Acceso Total + 4 Bonus GRATIS</p>
-                                <div className="flex justify-center items-end gap-2 opacity-50 mb-1">
-                                    <span className="text-slate-400 text-lg font-bold line-through">Valor Real: US$157</span>
-                                </div>
-                                <div className="flex justify-center items-center gap-2">
-                                    <span className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">US$09.90</span>
-                                </div>
-                                <p className="text-emerald-600 font-bold bg-emerald-50 inline-block px-3 py-1 rounded-lg mt-3 text-sm">
-                                    🎉 Ahorras 92% HOY
-                                </p>
-                            </div>
-
-                            <a
-                                href={checkoutUrl}
-                                className="w-full block text-center bg-gradient-to-br from-amber-500 to-amber-400 text-slate-900 font-bold py-4 px-6 rounded-xl shadow-xl hover:shadow-2xl hover:from-amber-400 hover:to-amber-500 transform hover:scale-[1.02] transition-all duration-300 text-lg uppercase tracking-wider relative overflow-hidden group mb-6"
-                            >
-                                <span className="relative z-10 flex items-center justify-center gap-2">
-                                    DESCARGAR AHORA MISM0 <span className="group-hover:translate-x-1 transition-transform">➜</span>
-                                </span>
-                            </a>
-
-                            <div className="bg-slate-50 rounded-xl p-4 border border-slate-100 text-center">
-                                <p className="text-sm text-slate-600 mb-2 font-medium">🔒 Tu seguridad es nuestra prioridad</p>
-                                <div className="flex justify-center gap-3 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                                    <span className="text-xs font-bold border border-slate-300 rounded px-2 py-1">🔒 SSL Secure</span>
-                                    <span className="text-xs font-bold border border-slate-300 rounded px-2 py-1">🛡️ Privacidad</span>
-                                </div>
-                            </div>
-
-                            <div className="mt-6 flex items-center justify-center gap-2">
+                            <div className="flex items-center justify-center gap-2">
                                 <div className="h-2 w-2 rounded-full bg-green-500 animate-pulse"></div>
                                 <p className="text-xs text-slate-500"><span className="font-bold text-slate-800">12 personas</span> compraron en la última hora.</p>
                             </div>
