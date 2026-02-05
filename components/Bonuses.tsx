@@ -158,25 +158,21 @@ interface BonusesProps {
 export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
 
     return (
-        <section className="py-16 md:py-24 bg-white overflow-hidden font-sans">
+        <section className="py-16 md:py-24 bg-white overflow-hidden font-sans border-t border-slate-100">
             <div className="container mx-auto px-6">
-                <div className="text-center max-w-4xl mx-auto mb-16">
-                    <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-2">
-                        🎁 BONOS EXCLUSIVOS
+                <div className="text-center max-w-4xl mx-auto mb-12">
+                    <span className="bg-amber-100 text-amber-700 font-bold px-4 py-1.5 rounded-full text-sm uppercase tracking-wider mb-6 inline-block">
+                        Oferta Limitada
+                    </span>
+                    <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-4">
+                        🎁 4 Regalos Exclusivos
                     </h2>
-                    <p className="text-xl md:text-2xl text-slate-700 font-bold mb-6">
-                        Valor Total de US$138 — <span className="text-amber-600">Tuyos Por US$0</span>
+                    <p className="text-xl md:text-2xl text-slate-600 font-medium mb-8">
+                        Valor Real: <span className="line-through decoration-red-400 text-slate-400">US$138</span> <span className="text-slate-300 mx-2">|</span> <span className="font-bold text-emerald-600 bg-emerald-50 px-3 py-1 rounded-lg border border-emerald-100">GRATIS HOY</span>
                     </p>
-
-                    <div className="inline-block bg-slate-900 text-amber-400 text-sm md:text-base font-bold px-6 py-2 rounded-full uppercase tracking-widest mb-8 shadow-lg animate-pulse">
-                        ⭐ SOLO CON PLAN PREMIUM ⭐
-                    </div>
 
                     <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed">
-                        Solo para quien adquiere el Plan Premium hoy, recibes gratuitamente esta biblioteca especial basada en las cartas de Pablo, creada para aliviar la carga espiritual y ayudarte a aplicar la fe a la vida real.
-                    </p>
-                    <p className="text-sm text-slate-500 mt-4 font-medium italic">
-                        * Estos bonos no están disponibles por separado ni se venden en ningún otro lugar.
+                        Al unirte hoy, te llevas esta biblioteca completa diseñada para aplicar la fe a tus lunes, martes y miércoles... no solo a tus domingos.
                     </p>
                 </div>
 
@@ -195,34 +191,52 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                 </div>
 
                 {/* Summary Box */}
-                <div className="mt-16 max-w-3xl mx-auto bg-slate-50 rounded-2xl border-2 border-slate-200 p-8 md:p-10 text-center relative overflow-hidden">
-                    <div className="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400"></div>
+                <div className="mt-16 max-w-3xl mx-auto bg-slate-50 rounded-2xl border-2 border-dashed border-amber-300 p-8 md:p-10 text-center relative overflow-hidden shadow-sm">
+                    {/* <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400"></div> */}
 
-                    <h3 className="text-2xl font-black text-slate-900 mb-6 uppercase tracking-tight">🎯 RESUMEN DE VALOR</h3>
+                    <h3 className="text-2xl font-black text-slate-900 mb-6 uppercase tracking-tight">RESUMEN DE TU ACCESO</h3>
 
-                    <div className="space-y-2 mb-8">
-                        <p className="text-lg text-slate-600">Valor total de los 4 bonos: <span className="line-through decoration-red-500 decoration-2">US$138</span></p>
-                        <p className="text-2xl md:text-3xl font-bold text-slate-900">Hoy con Plan Premium: <span className="text-emerald-600">US$0</span></p>
+                    <div className="bg-white p-6 rounded-xl border border-slate-200 text-left shadow-sm mb-8 space-y-4">
+                        <div className="flex justify-between items-center border-b border-slate-100 pb-3">
+                            <span className="font-bold text-slate-700">1. Las Cartas de Pablo (Libro Digital)</span>
+                            <span className="font-bold text-slate-900">US$19.00</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-slate-100 pb-3">
+                            <span className="font-medium text-slate-600">2. Bono: Pablo y la Ansiedad</span>
+                            <span className="text-emerald-600 font-bold">GRATIS</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-slate-100 pb-3">
+                            <span className="font-medium text-slate-600">3. Bono: Pablo y el Matrimonio</span>
+                            <span className="text-emerald-600 font-bold">GRATIS</span>
+                        </div>
+                        <div className="flex justify-between items-center border-b border-slate-100 pb-3">
+                            <span className="font-medium text-slate-600">4. Bono: Culpa Religiosa</span>
+                            <span className="text-emerald-600 font-bold">GRATIS</span>
+                        </div>
+                        <div className="flex justify-between items-center">
+                            <span className="font-medium text-slate-600">5. Bono: Fe en el Día a Día</span>
+                            <span className="text-emerald-600 font-bold">GRATIS</span>
+                        </div>
                     </div>
 
-                    <div className="bg-white p-6 rounded-xl border border-slate-200 text-left md:text-center shadow-sm mb-8">
-                        <p className="font-bold text-slate-800 mb-4 block">💡 Estos materiales están diseñados para resolver las áreas más difíciles de tu vida:</p>
-                        <ul className="text-slate-600 space-y-2 inline-block text-left">
-                            <li className="flex items-center gap-2"><span className="text-amber-500">•</span> Ansiedad y cansancio emocional</li>
-                            <li className="flex items-center gap-2"><span className="text-amber-500">•</span> Matrimonio y relaciones</li>
-                            <li className="flex items-center gap-2"><span className="text-amber-500">•</span> Culpa espiritual crónica</li>
-                            <li className="flex items-center gap-2"><span className="text-amber-500">•</span> Decisiones de la vida diaria</li>
-                        </ul>
+                    <div className="flex flex-col md:flex-row justify-between items-center bg-slate-800 p-6 rounded-xl text-white mb-8">
+                        <div className="text-left mb-4 md:mb-0">
+                            <p className="text-slate-400 text-sm uppercase tracking-wider font-bold">VALOR TOTAL</p>
+                            <p className="text-3xl font-black text-white line-through decoration-red-500 decoration-4 opacity-70">US$157</p>
+                        </div>
+                        <div className="text-right">
+                            <p className="text-amber-400 text-sm uppercase tracking-wider font-bold">HOY PAGAS SOLO</p>
+                            <p className="text-4xl md:text-5xl font-black text-white">US$19</p>
+                        </div>
                     </div>
-
-                    <p className="text-slate-500 text-sm font-medium italic">
-                        No son materiales genéricos. Son guías prácticas para problemas reales.
-                    </p>
 
                     <div className="mt-8">
-                        <a href="#pricing" className="inline-block bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 font-bold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider text-sm">
-                            GARANTIZAR MIS BONOS ➜
+                        <a href="#pricing" className="inline-block bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 uppercase tracking-wider text-base animate-pulse">
+                            QUIERO APROVECHAR ESTA OFERTA ➜
                         </a>
+                        <p className="text-slate-500 text-sm mt-4 font-medium">
+                            <span className="text-emerald-600">✓</span> Pago Único y Seguro
+                        </p>
                     </div>
                 </div>
             </div>
