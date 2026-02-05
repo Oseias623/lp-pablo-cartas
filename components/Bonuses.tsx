@@ -149,16 +149,16 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                     <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">
                         🎁 4 Regalos Exclusivos
                     </h2>
-                    
+
                     {/* Master Bundle Image */}
                     <div className="relative w-full max-w-2xl mx-auto mb-10 -mt-2">
-                        <img 
-                            src="/bundle-mockup.png" 
-                            alt="Colección Completa Las Cartas de Pablo" 
+                        <img
+                            src="/bundle-mockup.png"
+                            alt="Colección Completa Las Cartas de Pablo"
                             className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
                         />
-                         <div className="absolute -bottom-4 right-0 md:right-10 bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg shadow-lg rotate-3">
-                            VALOR: US$138 <br/> <span className="text-amber-300 text-xl font-black">GRATIS HOY</span>
+                        <div className="absolute -bottom-4 right-0 md:right-10 bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg shadow-lg rotate-3">
+                            VALOR: US$138 <br /> <span className="text-amber-300 text-xl font-black">GRATIS HOY</span>
                         </div>
                     </div>
 
@@ -181,20 +181,16 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                     ))}
                 </div>
 
-                            <p className="text-4xl md:text-5xl font-black text-white">US$19</p>
-                        </div>
-                    </div>
-
-                    <div className="mt-8">
-                        <a href="#pricing" className="inline-block bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 uppercase tracking-wider text-base animate-pulse">
-                            QUIERO APROVECHAR ESTA OFERTA ➜
-                        </a>
-                        <p className="text-slate-500 text-sm mt-4 font-medium">
-                            <span className="text-emerald-600">✓</span> Pago Único y Seguro
-                        </p>
-                    </div>
-                </div >
-            </div >
-        </section >
+                {/* Simplified Call to Action without Price Stack */}
+                <div className="mt-16 text-center">
+                    <a href="#pricing" className="inline-block bg-gradient-to-r from-amber-500 to-amber-400 text-slate-900 font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 uppercase tracking-wider text-base animate-pulse">
+                        QUIERO APROVECHAR ESTA OFERTA ➜
+                    </a>
+                    <p className="text-slate-500 text-sm mt-4 font-medium">
+                        🎁 Llevas todo esto <span className="text-emerald-600 font-bold">GRATIS</span> con tu inscripción.
+                    </p>
+                </div>
+            </div>
+        </section>
     );
 };
