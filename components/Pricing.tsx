@@ -40,37 +40,30 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                             </h2>
                             <p className="text-slate-500 font-medium mb-6">Acceso Total + 4 Bonus GRATIS</p>
 
-                            {/* Price Section */}
-                            <div className="flex justify-center items-end gap-2 opacity-50 mb-1">
-                                <span className="text-slate-400 text-lg font-bold line-through">Valor Real: US$157</span>
+                            <div className="flex justify-center items-center gap-2 mb-6">
+                                <span className="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter">9,90</span>
                             </div>
-                            <div className="flex justify-center items-center gap-2">
-                                <span className="text-5xl md:text-7xl font-black text-slate-900 tracking-tighter">US$09.90</span>
-                            </div>
-                            <p className="text-emerald-600 font-bold bg-emerald-50 inline-block px-3 py-1 rounded-lg mt-3 text-sm mb-8">
-                                🎉 Ahorras 92% HOY
-                            </p>
                         </div>
 
                         {/* Deliverables List (Inside Card) */}
                         <div className="bg-slate-50 rounded-xl p-6 border border-slate-100 mb-8 text-left">
-                            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-200 pb-2">Lo que recibes hoy:</h3>
-                            <ul className="space-y-3">
+                            <h3 className="text-sm font-bold text-slate-400 uppercase tracking-wider mb-4 border-b border-slate-200 pb-2">Tu acceso incluye:</h3>
+                            <ul className="space-y-4">
                                 <li className="flex items-start">
                                     <div className="bg-emerald-100 p-1 rounded-full mr-3 mt-0.5 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
-                                    <span className="font-bold text-slate-800 text-sm md:text-base">Las 13 Cartas de Pablo detalladas versículo por versículo</span>
+                                    <span className="font-bold text-slate-800 text-sm md:text-lg">Las 13 cartas de Pablo explicadas versículo por versículo</span>
                                 </li>
                                 <li className="flex items-center">
                                     <div className="bg-emerald-100 p-1 rounded-full mr-3 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
-                                    <span className="font-medium text-slate-700 text-sm md:text-base">Resumen en audio de las 13 cartas</span>
+                                    <span className="font-medium text-slate-700 text-sm md:text-lg">Resumen en audio de las 13 cartas</span>
                                 </li>
                                 <li className="flex items-center">
                                     <div className="bg-emerald-100 p-1 rounded-full mr-3 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
-                                    <span className="font-medium text-slate-700 text-sm md:text-base">Acceso inmediato a la App</span>
+                                    <span className="font-medium text-slate-700 text-sm md:text-lg">Acceso inmediato al aplicativo</span>
                                 </li>
                                 <li className="flex items-center">
                                     <div className="bg-emerald-100 p-1 rounded-full mr-3 flex-shrink-0"><CheckIcon className="text-emerald-600 w-4 h-4" /></div>
-                                    <span className="font-medium text-slate-700 text-sm md:text-base">Acceso Vitalicio (De por vida)</span>
+                                    <span className="font-medium text-slate-700 text-sm md:text-lg">Acceso Vitalicio (para siempre)</span>
                                 </li>
                             </ul>
                         </div>
