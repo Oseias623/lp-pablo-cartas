@@ -150,17 +150,7 @@ export const Bonuses: React.FC<BonusesProps> = ({ checkoutUrl }) => {
                         🎁 4 Regalos Exclusivos
                     </h2>
 
-                    {/* Master Bundle Image */}
-                    <div className="relative w-full max-w-2xl mx-auto mb-10 -mt-2">
-                        <img
-                            src="/bundle-mockup.png"
-                            alt="Colección Completa Las Cartas de Pablo"
-                            className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-700"
-                        />
-                        <div className="absolute -bottom-4 right-0 md:right-10 bg-emerald-500 text-white font-bold px-4 py-2 rounded-lg shadow-lg rotate-3">
-                            VALOR: US$138 <br /> <span className="text-amber-300 text-xl font-black">GRATIS HOY</span>
-                        </div>
-                    </div>
+
 
                     <p className="text-slate-600 max-w-3xl mx-auto text-lg leading-relaxed mt-12">
                         Al unirte hoy, te llevas esta biblioteca completa diseñada para aplicar la fe a tus lunes, martes y miércoles... no solo a tus domingos.
