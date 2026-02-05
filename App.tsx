@@ -13,12 +13,15 @@ const FinalCta = React.lazy(() => import('./components/FinalCta').then(module =>
 const Footer = React.lazy(() => import('./components/Footer').then(module => ({ default: module.Footer })));
 const MobileStickyCta = React.lazy(() => import('./components/MobileStickyCta').then(module => ({ default: module.MobileStickyCta })));
 
+import { CountdownBanner } from './components/CountdownBanner';
+
 const App: React.FC = () => {
   // Checkout link
   const checkoutUrl = "https://pay.hotmart.com/N103483225M?checkoutMode=10&bid=1766447525850";
 
   return (
-    <div className="bg-slate-50 text-slate-800 min-h-screen">
+    <div className="bg-slate-50 text-slate-800 min-h-screen pt-12">
+      <CountdownBanner />
       <main>
         {/* Critical Render Path - Eagerly Loaded */}
         <Hero checkoutUrl={checkoutUrl} />

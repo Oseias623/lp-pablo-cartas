@@ -40,7 +40,8 @@ export const Pricing: React.FC<PricingProps> = ({ checkoutUrl }) => {
                             </h2>
                             <p className="text-slate-500 font-medium mb-6">Acceso Total + 4 Bonus GRATIS</p>
 
-                            <div className="flex justify-center items-center gap-2 mb-6">
+                            <div className="flex justify-center items-center gap-3 mb-6">
+                                <span className="text-xl md:text-3xl font-bold text-slate-400 line-through decoration-red-500 decoration-2">US$19,90</span>
                                 <span className="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter">9,90</span>
                             </div>
                         </div>
