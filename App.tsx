@@ -5,7 +5,7 @@ import { Identification } from './components/Identification';
 // Lazy load components below the fold
 const SocialProof = React.lazy(() => import('./components/SocialProof').then(module => ({ default: module.SocialProof })));
 const About = React.lazy(() => import('./components/About').then(module => ({ default: module.About })));
-const Differentiation = React.lazy(() => import('./components/Differentiation').then(module => ({ default: module.Differentiation })));
+
 const Bonuses = React.lazy(() => import('./components/Bonuses').then(module => ({ default: module.Bonuses })));
 const Pricing = React.lazy(() => import('./components/Pricing').then(module => ({ default: module.Pricing })));
 const Faq = React.lazy(() => import('./components/Faq').then(module => ({ default: module.Faq })));
@@ -28,7 +28,7 @@ const App: React.FC = () => {
         <Suspense fallback={<div className="py-20 text-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-amber-500 mx-auto"></div></div>}>
           <SocialProof checkoutUrl={checkoutUrl} />
           <About />
-          <Differentiation />
+
           <Bonuses checkoutUrl={checkoutUrl} />
           <Pricing checkoutUrl={checkoutUrl} />
           <Faq />
