@@ -25,7 +25,7 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ checkoutUrl }) => {
                         <div className="z-10 w-full">
                             <a
                                 href={checkoutUrl}
-                                className="block w-full bg-amber-500 text-slate-900 font-bold py-4 px-4 rounded-xl shadow-xl text-lg hover:bg-amber-400 transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider relative overflow-hidden btn-shine"
+                                className="block w-full bg-amber-500 text-slate-900 font-bold py-4 px-4 rounded-full shadow-xl text-lg hover:bg-amber-400 transform hover:-translate-y-1 transition-all duration-300 uppercase tracking-wider relative overflow-hidden btn-shine"
                             >
                                 QUIERO ENTENDER A PABLO DE UNA VEZ
                             </a>
