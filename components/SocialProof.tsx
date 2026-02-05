@@ -77,15 +77,36 @@ export const SocialProof: React.FC<SocialProofProps> = ({ checkoutUrl }) => {
       role: "Maestra bíblica",
       location: "Argentina",
       quote: "Pensaba que necesitaba un seminario para entender a Pablo. Solo necesitaba el contexto correcto. Ahora enseño con seguridad y sin miedo."
+    },
+    {
+      name: "Ricardo V.",
+      role: "Empresario",
+      location: "Chile",
+      quote: "Me sentía culpable por prosperar. Entender el contexto de las cartas me liberó de la religiosidad y me enseñó a honrar a Dios con mi trabajo."
+    },
+    {
+      name: "Sofía T.",
+      role: "Madre de familia",
+      location: "España",
+      quote: "Luchaba con la ansiedad y sentía que Dios estaba decepcionado de mí. Descubrir la gracia real de Pablo fue un abrazo para mi alma."
     }
   ];
+
+  // Logic to make it feel "infinite" or at least longer on mobile
+  // We duplicate the array to allow for longer scrolling
+  const displayTestimonials = [...testimonialsData, ...testimonialsData];
 
   const handleScroll = () => {
     if (scrollRef.current) {
       const scrollLeft = scrollRef.current.scrollLeft;
       const width = scrollRef.current.offsetWidth;
-      const index = Math.round(scrollLeft / (width * 0.8)); // Approx card width
-      setActiveIndex(Math.min(testimonialsData.length - 1, Math.max(0, index)));
+      // Calculate index based on card width (approx 85vw or smaller on desktop)
+      // Adjust divisor based on breakpoint logic if needed, but for dots syncing:
+      const cardWidth = window.innerWidth >= 768 ? width / 3 : width * 0.85;
+      const index = Math.round(scrollLeft / cardWidth);
+
+      // Modulo to cycle the dots active state
+      setActiveIndex(index % testimonialsData.length);
     }
   };
 
@@ -107,14 +128,14 @@ export const SocialProof: React.FC<SocialProofProps> = ({ checkoutUrl }) => {
           onScroll={handleScroll}
           className="flex overflow-x-auto pb-8 gap-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0"
         >
-          {testimonialsData.map((t, i) => (
+          {displayTestimonials.map((t, i) => (
             <div key={i} className="min-w-[85vw] md:min-w-0 snap-center h-full">
               <TestimonialCard {...t} />
             </div>
           ))}
         </div>
 
-        {/* Mobile Scroll Indicators */}
+        {/* Mobile Scroll Indicators - Only show original count */}
         <div className="flex justify-center gap-2 md:hidden mb-8">
           {testimonialsData.map((_, i) => (
             <div

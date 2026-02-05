@@ -37,7 +37,8 @@ const App: React.FC = () => {
       </main>
       <Suspense fallback={null}>
         <Footer />
-        <MobileStickyCta />
+        <Footer />
+        {/* <MobileStickyCta /> - Removed by user request */}
       </Suspense>
     </div>
   );
