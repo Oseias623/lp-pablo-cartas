@@ -60,57 +60,57 @@ export const About: React.FC = () => {
     <section className="py-16 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-2xl md:text-4xl font-extrabold text-slate-900 mb-6">Esto es donde Pablo empieza a ayudarte en la vida real</h2>
+          <p className="text-amber-600 font-bold uppercase tracking-widest text-sm mb-4">La Transformación Real</p>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 leading-tight">
+            Así es como Pablo <br />
+            <span className="text-amber-500">transforma tu realidad hoy</span>
+          </h2>
           <div className="h-1 w-24 bg-amber-500 mx-auto rounded-full"></div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto justify-center">
           <BenefitCard
             index={0}
-            title="Ansiedad y Cansancio Interior"
-            description="Aprendes a leer a Pablo sin culpa ni presión espiritual. Entiendes la gracia de forma práctica y encuentras descanso en medio de la ansiedad y el agotamiento emocional."
+            title="Paz Mental y Descanso"
+            description="Aprendes a leer a Pablo sin culpa ni presión. Entiendes la gracia de forma práctica y encuentras descanso real en medio de la ansiedad."
           />
           <BenefitCard
             index={1}
-            title="Matrimonio y Relaciones"
-            description="Descubres cómo aplicar los principios de Pablo para mejorar la comunicación, resolver conflictos y vivir relaciones más sanas sin religiosidad dura."
+            title="Relaciones Restauradas"
+            description="Aplicas principios de amor y respeto (no de ley) para sanar tu matrimonio y mejorar la comunicación con quienes te rodean."
           />
           <BenefitCard
             index={2}
-            title="Dinero, Trabajo y Decisiones"
-            description="Comprendes lo que Pablo realmente enseñó sobre provisión, contentamiento y responsabilidad, sin culpa por prosperar ni miedo al futuro."
+            title="Trabajo y Prosperidad"
+            description="Entiendes lo que Pablo enseñó sobre provisión y responsabilidad, liberándote de la culpa por prosperar o el miedo al futuro."
           />
           <BenefitCard
             index={3}
-            title="Fe para el Día a Día"
-            description="Dejas de leer la Biblia como teoría. Empiezas a aplicar lo que lees en decisiones reales, conversaciones difíciles y momentos de duda."
+            title="Fe Práctica y Real"
+            description="Dejas la teoría. Empiezas a aplicar la Biblia en decisiones reales, conversaciones difíciles y momentos de duda del lunes por la mañana."
           />
           <BenefitCard
             index={4}
-            title="Comunidad y Seguridad Espiritual"
-            description="Lees con claridad y seguridad, sin depender de interpretaciones ajenas. Ganas confianza para enseñar, compartir y caminar con otros sin miedo a equivocarte."
+            title="Seguridad al Enseñar"
+            description="Lees con claridad y dejas de depender de otros. Ganas confianza para enseñar y compartir tu fe sin miedo a equivocarte teológicamente."
           />
         </div>
 
         {/* Closing Section */}
-        <div className="mt-16 text-center max-w-3xl mx-auto bg-slate-50 p-8 rounded-2xl border border-slate-100">
-          <p className="text-lg text-slate-700 font-medium mb-4">
-            Todo esto con un enfoque simple, humano y sin juicio
+        <div className="mt-16 text-center max-w-3xl mx-auto bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm relative overflow-hidden">
+          <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-transparent via-amber-400 to-transparent"></div>
+
+          <p className="text-xl text-slate-800 font-bold mb-4">
+            Sin Teología Complicada. Sin Juicios.
           </p>
-          <p className="text-slate-600 mb-6">
-            Porque Pablo no escribió para cristianos perfectos,<br />
-            sino para personas reales aprendiendo a vivir la fe en medio de la vida.
+          <p className="text-slate-600 mb-8 max-w-xl mx-auto leading-relaxed">
+            Porque Pablo no escribió para teélogos perfectos, sino para personas reales aprendiendo a vivir la fe en un mundo difícil.
           </p>
-          <div className="pt-4 border-t border-slate-200">
-            <h3 className="text-2xl font-black text-slate-900 mb-2">Las Cartas de Pablo</h3>
-            <p className="text-amber-600 font-bold text-lg">
-              Enseñanzas prácticas para tu vida — hoy.
-            </p>
-            <div className="mt-8">
-              <a href="#pricing" className="inline-block bg-slate-900 text-amber-500 font-bold py-3 px-6 rounded-lg shadow-md hover:shadow-lg hover:bg-slate-800 transition-all uppercase tracking-wider text-sm">
-                VER OFERTA ESPECIAL ➜
-              </a>
-            </div>
+
+          <div>
+            <a href="#pricing" className="inline-flex items-center justify-center bg-slate-900 text-white font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl hover:bg-slate-800 transition-all uppercase tracking-wider text-sm group">
+              <span className="text-amber-400 mr-2">➜</span> QUIERO EMPEZAR MI CAMBIO
+            </a>
           </div>
         </div>
 
