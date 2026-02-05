@@ -129,7 +129,7 @@ export const SocialProof: React.FC<SocialProofProps> = ({ checkoutUrl }) => {
           className="flex overflow-x-auto pb-8 gap-4 snap-x snap-mandatory md:grid md:grid-cols-3 md:gap-6 md:overflow-visible scrollbar-hide -mx-6 px-6 md:mx-0 md:px-0"
         >
           {displayTestimonials.map((t, i) => (
-            <div key={i} className="min-w-[85vw] md:min-w-0 snap-center h-full">
+            <div key={i} className={`min-w-[85vw] md:min-w-0 snap-center h-full ${i >= testimonialsData.length ? 'md:hidden' : ''}`}>
               <TestimonialCard {...t} />
             </div>
           ))}
